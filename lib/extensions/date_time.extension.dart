@@ -18,7 +18,7 @@ extension DateTimeExtension on DateTime {
     DateTime date = DateTime(year, month, day);
 
     // Berechne die differenz zum Beginn des Jahres
-    int dayOfYear = date.difference(DateTime(year, 1, 1)).inDays + 1;
+    int dayOfYear = date.dayOfYear;
 
     // Wochendtag des 1. Januar (1 = Montag, 7 = Sonntag).
     int weekdayOfFirstDay = DateTime(year, 1, 1).weekday;
@@ -39,5 +39,9 @@ extension DateTimeExtension on DateTime {
       if (weekNumber > threshold) return 1;
     }
     return weekNumber;
+  }
+
+  int get dayOfYear {
+    return DateTime(year, month, day).difference(DateTime(year, 1, 1)).inDays + 1;
   }
 }
