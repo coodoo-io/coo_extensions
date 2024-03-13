@@ -1,7 +1,7 @@
 name: coo_extensions
 description: "coo(l) extensions! A set of commonly used Dart/Flutter extension to ease development."
 version: 0.0.1
-homepage: coodoo.de
+homepage: https://github.com/coodoo-io/coo_extensions
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
