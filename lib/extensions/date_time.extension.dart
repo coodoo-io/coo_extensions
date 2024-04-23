@@ -17,12 +17,12 @@ extension DateTimeExtension on DateTime {
     return DateTime.now().year == year;
   }
 
-  bool isAfterOrEqualTo(DateTime dateTime) {
+  bool isAfterOrEqual(DateTime dateTime) {
     final isAtSameMomentAs = dateTime.isAtSameMomentAs(this);
     return isAtSameMomentAs | isAfter(dateTime);
   }
 
-  bool isBeforeOrEqualTo(DateTime dateTime) {
+  bool isBeforeOrEqual(DateTime dateTime) {
     final isAtSameMomentAs = dateTime.isAtSameMomentAs(this);
     return isAtSameMomentAs | isBefore(dateTime);
   }
@@ -31,8 +31,8 @@ extension DateTimeExtension on DateTime {
     DateTime fromDateTime,
     DateTime toDateTime,
   ) {
-    final isAfter = isAfterOrEqualTo(fromDateTime);
-    final isBefore = isBeforeOrEqualTo(toDateTime);
+    final isAfter = isAfterOrEqual(fromDateTime);
+    final isBefore = isBeforeOrEqual(toDateTime);
     return isAfter && isBefore;
   }
 }

@@ -52,7 +52,7 @@ void main() {
         final curDate = DateTime(2024, 1, 1);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isAfterOrEqualTo(testDate);
+        final result = curDate.isAfterOrEqual(testDate);
         expect(result, false);
       });
 
@@ -60,7 +60,7 @@ void main() {
         final curDate = DateTime(2024, 1, 3);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isAfterOrEqualTo(testDate);
+        final result = curDate.isAfterOrEqual(testDate);
         expect(result, true);
       });
 
@@ -68,7 +68,7 @@ void main() {
         final curDate = DateTime(2024, 1, 2);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isAfterOrEqualTo(testDate);
+        final result = curDate.isAfterOrEqual(testDate);
         expect(result, true);
       });
 
@@ -76,7 +76,7 @@ void main() {
         final curDate = DateTime(2024, 1, 1);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isBeforeOrEqualTo(testDate);
+        final result = curDate.isBeforeOrEqual(testDate);
         expect(result, true);
       });
 
@@ -84,7 +84,7 @@ void main() {
         final curDate = DateTime(2024, 1, 3);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isBeforeOrEqualTo(testDate);
+        final result = curDate.isBeforeOrEqual(testDate);
         expect(result, false);
       });
 
@@ -92,7 +92,7 @@ void main() {
         final curDate = DateTime(2024, 1, 2);
         final testDate = DateTime(2024, 1, 2);
 
-        final result = curDate.isBeforeOrEqualTo(testDate);
+        final result = curDate.isBeforeOrEqual(testDate);
         expect(result, true);
       });
     });
