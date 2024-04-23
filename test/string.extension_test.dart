@@ -27,9 +27,7 @@ void main() {
       expect(result, isTrue);
     });
 
-    test(
-        'isNullOrEmpty should return true for string with only whitespace characters',
-        () {
+    test('isNullOrEmpty should return true for string with only whitespace characters', () {
       // Arrange
       String? str = '   ';
 
@@ -51,37 +49,36 @@ void main() {
       expect(result, isFalse);
     });
 
-    test('obscure should replace all characters but spaces with stars', () {
+    test('obscureText should replace all characters but spaces with stars', () {
       // Arrange
       String? str = 'Hello World';
 
       // Act
-      String result = str.obscure();
+      String result = str.obscureText();
 
       // Assert
       expect(result, '***** *****');
     });
 
-    test('obscureSecret should replace secret with obscured characters', () {
+    test('obscureTextSegment should replace segment with obscureTextd characters', () {
       // Arrange
       String? str = 'The secret is 12345';
-      String secret = '12345';
+      String segment = '12345';
 
       // Act
-      String result = str.obscureSecret(secret);
+      String result = str.obscureTextSegment(segment);
 
       // Assert
       expect(result, 'The secret is *****');
     });
 
-    test('obscureSecret should replace secret with custom obscured characters',
-        () {
+    test('obscureTextSegment should replace segment with custom obscureTextd characters', () {
       // Arrange
       String? str = 'The secret is 12345';
-      String secret = '12345';
+      String segment = '12345';
 
       // Act
-      String result = str.obscureSecret(secret, replacement: '#');
+      String result = str.obscureTextSegment(segment, replacement: '#');
 
       // Assert
       expect(result, 'The secret is #####');

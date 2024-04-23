@@ -4,18 +4,18 @@ extension StringExtension on String? {
   bool get isNullOrEmpty => (this == null || this?.trim() == '');
 
   /// Replaces all characters but spaces in this string with stars (default [replacement] is '*')
-  String obscure({String replacement = '*'}) {
+  String obscureText({String replacement = '*'}) {
     if (this == null) {
       return '';
     }
     return this!.replaceAll(RegExp('[^ ]'), replacement);
   }
 
-  /// Makes the [secret] in a string unrecognizable by replacing all characters but spaces in this string with stars (default [replacement] is '*')
-  String obscureSecret(String secret, {String replacement = '*'}) {
+  /// Makes the [segment] in a string unrecognizable by replacing all characters but spaces in this string with stars (default [replacement] is '*')
+  String obscureTextSegment(String segment, {String replacement = '*'}) {
     if (this == null) {
       return '';
     }
-    return this!.replaceAll(secret, secret.obscure(replacement: replacement));
+    return this!.replaceAll(segment, segment.obscureText(replacement: replacement));
   }
 }

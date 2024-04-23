@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ## [0.1.0] - 2024-03-15
 ### Added
-- String extensions: `isNullOrEmpty`, `obscure`, `obscureSecret`
+- String extensions: `isNullOrEmpty`, `obscureText`, `obscureTextSegment`
 - DateTime extensions: `isToday`, `isYesterday`, `isSameYear`
 - BuildContext extensions: `isLightMode`, `isDarkMode`, `deviceWidth`, `deviceHeight`
 - Number extensions: `isBetween`

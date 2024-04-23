@@ -20,8 +20,8 @@ Then, run `flutter pub get` to install the package.
 ### String Extensions
 
 - `isNullOrEmpty`: Checks if a string is null, empty, or contains only whitespace characters.
-- `obscure`: Replaces all characters but spaces in a string with stars (default replacement is '*').
-- `obscureSecret`: Makes a secret unrecognizable in a string by replacing all characters but spaces with stars (default replacement is '*').
+- `obscureText`: Replaces all characters but spaces in a string with stars (default replacement is '*').
+- `obscureTextSegment`: Makes a text segment unrecognizable in a string by replacing all characters but spaces with stars (default replacement is '*').
 
 Example:
 
@@ -35,7 +35,7 @@ void main() {
   print(str.isNullOrEmpty); // Output: false
 
   // Obscure the string
-  print(str.obscure()); // Output: ***** *****
+  print(str.obscureText()); // Output: ***** *****
 }
 ```
 
