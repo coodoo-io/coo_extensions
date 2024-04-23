@@ -27,7 +27,9 @@ void main() {
       expect(result, isTrue);
     });
 
-    test('isNullOrEmpty should return true for string with only whitespace characters', () {
+    test(
+        'isNullOrEmpty should return true for string with only whitespace characters',
+        () {
       // Arrange
       String? str = '   ';
 
@@ -60,7 +62,9 @@ void main() {
       expect(result, '***** *****');
     });
 
-    test('obscureTextSegment should replace segment with obscureTextd characters', () {
+    test(
+        'obscureTextSegment should replace segment with obscureTextd characters',
+        () {
       // Arrange
       String? str = 'The secret is 12345';
       String segment = '12345';
@@ -72,7 +76,9 @@ void main() {
       expect(result, 'The secret is *****');
     });
 
-    test('obscureTextSegment should replace segment with custom obscureTextd characters', () {
+    test(
+        'obscureTextSegment should replace segment with custom obscureTextd characters',
+        () {
       // Arrange
       String? str = 'The secret is 12345';
       String segment = '12345';

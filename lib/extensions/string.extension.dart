@@ -16,6 +16,7 @@ extension StringExtension on String? {
     if (this == null) {
       return '';
     }
-    return this!.replaceAll(segment, segment.obscureText(replacement: replacement));
+    return this!
+        .replaceAll(segment, segment.obscureText(replacement: replacement));
   }
 }

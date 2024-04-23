@@ -3,7 +3,6 @@
 **coo(l) extensions!**
 A set of commonly used Dart/Flutter extension to ease development.
 
-
 ## Installation
 
 To use this package, add `coo_extension` as a dependency in your `pubspec.yaml` file.
@@ -44,6 +43,9 @@ void main() {
 - `isToday`: Checks if a DateTime object represents today's date.
 - `isYesterday`: Checks if a DateTime object represents yesterday's date.
 - `isSameYear`: Checks if a DateTime object belongs to the same year as the current date and time.
+-  `isAfterOrEqual`: Checks if the current DateTime is after or equal to the given DateTime
+- `isBeforeOrEqual`:  Checks if the current DateTime is before or equal to the given DateTime
+- `isBetween`:  Checks if the current DateTime is between the given dates
 
 Example:
 

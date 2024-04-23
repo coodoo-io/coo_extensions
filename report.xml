@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.form.extension" timestamp="2024-04-23T13:59:07">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.form.extension" name="" time="0.018"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="12" skipped="0" name=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" timestamp="2024-04-23T13:59:07">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isToday should return true for today's date" time="0.018"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isYesterday should return true for yesterday's date" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isSameYear should return true for the same year as the current date" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isSameYear should return false for a different year than the current date" time="0.003"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is not after CurrentDate" time="0.003"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is after CurrentDate" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is equals CurrentDate" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is not before CurrentDate" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is before CurrentDate" time="0.001"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBeforeOrEqualTo or isAfterOrEqualTo if date is equals CurrentDate" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBetween current date is not in between two dates" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.date_time.extension" name="DateTimeExtension isBetween current date is in between two dates" time="0.001"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="7" skipped="0" name=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" timestamp="2024-04-23T13:59:07">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension isNullOrEmpty should return true for null string" time="0.014"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension isNullOrEmpty should return true for empty string" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension isNullOrEmpty should return true for string with only whitespace characters" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension isNullOrEmpty should return false for non-empty string" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension obscureText should replace all characters but spaces with stars" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension obscureTextSegment should replace segment with obscureTextd characters" time="0.002"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.string.extension" name="StringExtension obscureTextSegment should replace segment with custom obscureTextd characters" time="0.002"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="3" skipped="0" name=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.number.extension" timestamp="2024-04-23T13:59:07">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.number.extension" name="NumberExtension isBetween should return true if the number is between the specified range" time="0.014"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.number.extension" name="NumberExtension isBetween should return false if the number is outside the specified range" time="0.001"/>
+    <testcase classname=".Users.janmarsh.Programming.workspace.coodoo.packages.coo_extensions.test.number.extension" name="NumberExtension isBetween should return false if the number is null" time="0.002"/>
+  </testsuite>
+</testsuites>
