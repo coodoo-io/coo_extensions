@@ -1,15 +1,15 @@
-# coo_extension
+# coo_extensions
 
 **coo(l) extensions!**
-A set of commonly used Dart/Flutter extension to ease development.
+A set of commonly used Dart/Flutter extensions to ease development.
 
 ## Installation
 
-To use this package, add `coo_extension` as a dependency in your `pubspec.yaml` file.
+To use this package, add `coo_extensions` as a dependency in your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  coo_extension: ^0.1.0
+  coo_extensions: ^0.1.0
 ```
 
 Then, run `flutter pub get` to install the package.
@@ -25,7 +25,7 @@ Then, run `flutter pub get` to install the package.
 Example:
 
 ```dart
-import 'package:coo_extensions/string_extension.dart';
+import 'package:coo_extensions/string.extension.dart';
 
 void main() {
   String? str = 'Hello World';
