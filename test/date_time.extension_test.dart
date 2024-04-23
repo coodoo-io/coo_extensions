@@ -25,7 +25,8 @@ void main() {
       expect(result, isTrue);
     });
 
-    test('isSameYear should return true for the same year as the current date', () {
+    test('isSameYear should return true for the same year as the current date',
+        () {
       // Arrange
       DateTime now = DateTime.now();
 
@@ -36,7 +37,9 @@ void main() {
       expect(result, isTrue);
     });
 
-    test('isSameYear should return false for a different year than the current date', () {
+    test(
+        'isSameYear should return false for a different year than the current date',
+        () {
       // Arrange
       DateTime otherYear = DateTime.now().subtract(const Duration(days: 365));
 
