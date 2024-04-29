@@ -19,16 +19,27 @@ extension DateTimeExtension on DateTime {
     return DateTime.now().year == year;
   }
 
+  /// Checks if the current DateTime instance is after or equal to the given [dateTime].
+  /// Returns `true` if it is, `false` otherwise.
   bool isAfterOrEqual(DateTime dateTime) {
     final isAtSameMomentAs = dateTime.isAtSameMomentAs(this);
     return isAtSameMomentAs | isAfter(dateTime);
   }
 
+  /// Checks if the current DateTime instance is before or equal to the given [dateTime].
+  /// Returns `true` if it is, `false` otherwise.
   bool isBeforeOrEqual(DateTime dateTime) {
     final isAtSameMomentAs = dateTime.isAtSameMomentAs(this);
     return isAtSameMomentAs | isBefore(dateTime);
   }
 
+  /// Checks if the current DateTime instance falls between the provided [fromDateTime] and [toDateTime].
+  ///
+  /// Returns `true` if the current DateTime instance is after or equal to [fromDateTime]
+  /// and before or equal to [toDateTime], otherwise returns `false`.
+  ///
+  /// This method internally uses [isAfterOrEqual] and [isBeforeOrEqual] methods to determine
+  /// if the current DateTime instance is within the specified range.
   bool isBetween(
     DateTime fromDateTime,
     DateTime toDateTime,

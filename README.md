@@ -9,7 +9,7 @@ To use this package, add `coo_extensions` as a dependency in your `pubspec.yaml`
 
 ```yaml
 dependencies:
-  coo_extensions: ^0.1.0
+  coo_extensions: ^0.1.1
 ```
 
 Then, run `flutter pub get` to install the package.
