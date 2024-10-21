@@ -15,8 +15,23 @@ extension DateTimeExtension on DateTime {
   }
 
   /// Indicates whether the DateTime object belongs to the same year as the current date and time.
-  bool get isSameYear {
+  bool get isThisYear {
     return DateTime.now().year == year;
+  }
+
+  /// Indicates whether two DateTime objects are in the same year.
+  bool isSameYear(DateTime date) {
+    return year == date.year;
+  }
+
+  /// Indicates whether two DateTime objects are in the same month.
+  bool isSameMonth(DateTime date) {
+    return year == date.year && month == date.month;
+  }
+
+  /// Indicates whether two DateTime objects are on the same day.
+  bool isSameDay(DateTime date) {
+    return year == date.year && month == date.month && day == date.day;
   }
 
   /// Checks if the current DateTime instance is after or equal to the given [dateTime].

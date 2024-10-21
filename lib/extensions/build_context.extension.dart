@@ -14,8 +14,8 @@ extension BuildContextExtension on BuildContext {
       Brightness.dark;
 
   /// Retrieves the width of the device screen.
-  double get deviceWidth => MediaQuery.of(this).size.width;
+  double get deviceWidth => MediaQuery.sizeOf(this).width;
 
   /// Retrieves the height of the device screen.
-  double get deviceHeight => MediaQuery.of(this).size.height;
+  double get deviceHeight => MediaQuery.sizeOf(this).height;
 }
